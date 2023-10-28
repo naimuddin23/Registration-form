@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Registration Page</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">REGISTRATION FORM</h1>
+    <section class="enrollment-form">
+      <div class="form-column">
+        <h2>Student Enrollment Form</h2>
+        <form id="studentForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          
+          <label for="website">Website Link:</label>
+          <input type="url" id="website" required>
+          
+          <label for="profileEmail">Image Link:</label>
+          <input type="url" id="profileEmail" required>
+          
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" value="male">Male</label>
+          <label><input type="radio" name="gender" value="female">Female</label>
+          
+          <label>Skills:</label>
+          <label><input type="checkbox" name="skills" value="html">HTML</label>
+          <label><input type="checkbox" name="skills" value="css">CSS</label>
+          <label><input type="checkbox" name="skills" value="js">JavaScript</label>
+          
+          <button type="button" id="enrollButton">Enroll Student</button>
+          <button type="button" id="clearButton">Clear</button>
+        </form>
+      </div>
+      <div class="students-column">
+        <h2>Enrolled Students</h2>
+        <div id="enrolledStudents" class="student-list"></div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
